@@ -14,14 +14,14 @@
     
                       <div class="col-lg-8">
                          
-                          <article id="task" >
+                          <article id="task">
                               <fieldset class="mt-2" >
                                   <h2>Using Vue.js</h2>
                               </fieldset>
                         <fieldset class="mt-3" >
                             <!-- <h2>Using Vue.js</h2> -->
                             <br>
-                            <label for="guest">Enter your name :</label>
+                            <label for="guest">Enter your name :&nbsp;</label>
                             <input v-model="guest" id="guest" type="text" >
                         </fieldset>
                 
@@ -30,14 +30,15 @@
                             <input v-model="firstNumber" id="firstNumber" >
                             
                              </fieldset>
-                        <fieldset class="mt-2" >
+                             <fieldset class="mt-2" >
                             <label for="secondNumber">Enter avg Tasks per story :&nbsp;&nbsp;&nbsp;&nbsp;</label>
                             <input v-model="secondNumber" id="secondNumber" >
                             
-                            <h5>{{result}}</h5>
+                            
                         </fieldset>
-                
-                
+                        <fieldset class="mt-2" >
+                        <h5>{{result}}</h5>
+                      </fieldset>
                         
                     </article>
           
