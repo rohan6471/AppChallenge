@@ -1,8 +1,18 @@
-const calc = (radius) => {
-    return Math.PI * radius * radius;
-}
-document.querySelector('#calculate').addEventListener('click', () => {
-    const radius = parseInt(document.querySelector("#radius").value)
-    const result = `${calc(radius)}`
-    document.querySelector("#result").innerHTML = result;
-})  
+
+const total = (x,y) => { return x*y }
+
+const task = new Vue({
+    el: '#task',
+    data: {
+        guest: 'Rohan',
+        firstNumber: 5,
+        secondNumber: 4,
+    },
+    computed: {
+        result: function () {
+            const i = parseInt(this.firstNumber);
+            const j = parseInt(this.secondNumber);
+            return `${this.guest},  Total tasks are ${total(i,j)}.`
+        }
+    }
+})
